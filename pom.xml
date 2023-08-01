@@ -4,6 +4,9 @@
   <artifactId>carvajal-model</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>carvajal-model</name>
+  <properties>
+	  <springframework-boot>3.1.2</springframework-boot>
+  </properties>
   <dependencies>
 	  <dependency>
 			<groupId>org.projectlombok</groupId>
@@ -15,13 +18,19 @@
 	  <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-			<version>3.1.2</version>
+			<version>${springframework-boot}</version>
 	  </dependency>
+	  
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-webflux</artifactId>
+		  <version>${springframework-boot}</version>
+	  </dependency>  
 		
 	  <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
-        <version>3.1.2</version>
+        <version>${springframework-boot}</version>
     </dependency>
   </dependencies>
 </project>
